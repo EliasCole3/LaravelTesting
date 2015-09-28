@@ -12,6 +12,13 @@ use Redirect;
 
 class TasksController extends Controller
 {
+    
+    protected $rules = [
+		'name' => ['required', 'min:3'],
+		'slug' => ['required'],
+		'description' => ['required'],
+	];
+    
     /**
      * Display a listing of the resource.
      *
@@ -38,8 +45,10 @@ class TasksController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Project $project)
+    public function store(Project $project, Request $request)
     {
+        $this->validate($request, $this->rules);
+        
         $input = Input::all();
         $input['project_id'] = $project->id;
         Task::create( $input );
@@ -79,8 +88,10 @@ class TasksController extends Controller
      * @param  \App\Task    $task
      * @return \Illuminate\Http\Response
      */
-    public function update(Project $project, Task $task)
+    public function update(Project $project, Task $task, Request $request)
     {
+        $this->validate($request, $this->rules);
+        
         $input = array_except(Input::all(), '_method');
         $task->update($input);
      
