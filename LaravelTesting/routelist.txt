@@ -1,0 +1,21 @@
++--------+----------+----------------------------------------+------------------------+-------------------------------------------------+------------+
+| Domain | Method   | URI                                    | Name                   | Action                                          | Middleware |
++--------+----------+----------------------------------------+------------------------+-------------------------------------------------+------------+
+|        | GET|HEAD | /                                      |                        | Closure                                         |            |
+|        | GET|HEAD | projects                               | projects.index         | App\Http\Controllers\ProjectsController@index   |            |
+|        | POST     | projects                               | projects.store         | App\Http\Controllers\ProjectsController@store   |            |
+|        | GET|HEAD | projects/create                        | projects.create        | App\Http\Controllers\ProjectsController@create  |            |
+|        | DELETE   | projects/{projects}                    | projects.destroy       | App\Http\Controllers\ProjectsController@destroy |            |
+|        | PATCH    | projects/{projects}                    |                        | App\Http\Controllers\ProjectsController@update  |            |
+|        | GET|HEAD | projects/{projects}                    | projects.show          | App\Http\Controllers\ProjectsController@show    |            |
+|        | PUT      | projects/{projects}                    | projects.update        | App\Http\Controllers\ProjectsController@update  |            |
+|        | GET|HEAD | projects/{projects}/edit               | projects.edit          | App\Http\Controllers\ProjectsController@edit    |            |
+|        | POST     | projects/{projects}/tasks              | projects.tasks.store   | App\Http\Controllers\TasksController@store      |            |
+|        | GET|HEAD | projects/{projects}/tasks              | projects.tasks.index   | App\Http\Controllers\TasksController@index      |            |
+|        | GET|HEAD | projects/{projects}/tasks/create       | projects.tasks.create  | App\Http\Controllers\TasksController@create     |            |
+|        | DELETE   | projects/{projects}/tasks/{tasks}      | projects.tasks.destroy | App\Http\Controllers\TasksController@destroy    |            |
+|        | PATCH    | projects/{projects}/tasks/{tasks}      |                        | App\Http\Controllers\TasksController@update     |            |
+|        | PUT      | projects/{projects}/tasks/{tasks}      | projects.tasks.update  | App\Http\Controllers\TasksController@update     |            |
+|        | GET|HEAD | projects/{projects}/tasks/{tasks}      | projects.tasks.show    | App\Http\Controllers\TasksController@show       |            |
+|        | GET|HEAD | projects/{projects}/tasks/{tasks}/edit | projects.tasks.edit    | App\Http\Controllers\TasksController@edit       |            |
++--------+----------+----------------------------------------+------------------------+-------------------------------------------------+------------+
