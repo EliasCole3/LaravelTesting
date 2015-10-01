@@ -29,5 +29,31 @@ Route::bind('projects', function($value, $route) {
 });
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('misc/index');
 });
+
+Route::get('/portfolio', function () {
+    return view('misc/portfolio');
+});
+
+Route::get('/resume', function () {
+    return view('misc/resume');
+});
+
+Route::get('/portfolio/assembly', function () {
+    return view('demos/assembly');
+});
+
+Route::get('/portfolio/android-fragments', function () {
+    return view('demos/android-fragments');
+});
+
+Route::get('/portfolio/matching-game', function () {
+    return view('demos/matching-game');
+});
+
+
+// Route::get('/', function()
+// {
+//     return 'Hello World';
+// });
