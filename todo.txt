@@ -1,0 +1,5 @@
+Mobile friendly
+Better nav
+Better design
+replace &nbsp; with margins
+Texture
