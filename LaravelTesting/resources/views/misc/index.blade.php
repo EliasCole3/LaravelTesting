@@ -3,9 +3,8 @@
 @section('content')
     <div id="splashMessage">
         
-        <b>Welcome!</b> 
-        <br />
-        <br />
+        <b>Welcome!</b> <br> <br>
+
         Please feel free to peruse my previous work and take a look at my resume. <br />
 
         <div class="update-container">

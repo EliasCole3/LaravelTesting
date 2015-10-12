@@ -19,7 +19,11 @@
 |
 */
 
+//local dev
 require __DIR__.'/../bootstrap/autoload.php';
+
+//live
+// require __DIR__.'/../../Laravel/bootstrap/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -33,7 +37,11 @@ require __DIR__.'/../bootstrap/autoload.php';
 |
 */
 
+//local dev
 $app = require_once __DIR__.'/../bootstrap/app.php';
+
+//live
+// $app = require_once __DIR__.'/../../Laravel/bootstrap/app.php';
 
 /*
 |--------------------------------------------------------------------------

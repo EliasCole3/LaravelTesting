@@ -52,6 +52,19 @@ Route::get('/portfolio/matching-game', function () {
     return view('demos/matching-game');
 });
 
+Route::get('/timeline', function () {
+    return view('timeline/timeline');
+});
+
+
+Route::get('/scrollbars', function () {
+    return view('scrollbars/scrollbars5');
+});
+
+Route::get('/scrollbars5', function () {
+    return view('scrollbars/scrollbars5');
+});
+
 
 // Route::get('/', function()
 // {
